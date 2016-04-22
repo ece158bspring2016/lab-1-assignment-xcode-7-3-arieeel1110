@@ -17,6 +17,7 @@
 		8D6A4A721CC97793004F1E8F /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A4A711CC97793004F1E8F /* MyTableViewCell.swift */; };
 		8D6A4A741CC979A8004F1E8F /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A4A731CC979A8004F1E8F /* MyTableViewController.swift */; };
 		8D6A4A761CC97BB2004F1E8F /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A4A751CC97BB2004F1E8F /* profile.swift */; };
+		8D6A4A781CCA0117004F1E8F /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A4A771CCA0117004F1E8F /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D6A4A711CC97793004F1E8F /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		8D6A4A731CC979A8004F1E8F /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		8D6A4A751CC97BB2004F1E8F /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		8D6A4A771CCA0117004F1E8F /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				8D6A4A711CC97793004F1E8F /* MyTableViewCell.swift */,
 				8D6A4A731CC979A8004F1E8F /* MyTableViewController.swift */,
 				8D6A4A751CC97BB2004F1E8F /* profile.swift */,
+				8D6A4A771CCA0117004F1E8F /* TabViewController.swift */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6A4A781CCA0117004F1E8F /* TabViewController.swift in Sources */,
 				8D6A4A461CC976DB004F1E8F /* ViewController.swift in Sources */,
 				8D6A4A441CC976DB004F1E8F /* AppDelegate.swift in Sources */,
 				8D6A4A721CC97793004F1E8F /* MyTableViewCell.swift in Sources */,
@@ -497,6 +501,7 @@
 				8D6A4A6A1CC976DB004F1E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D6A4A6B1CC976DB004F1E8F /* Build configuration list for PBXNativeTarget "Lab1Tests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +510,7 @@
 				8D6A4A6D1CC976DB004F1E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D6A4A6E1CC976DB004F1E8F /* Build configuration list for PBXNativeTarget "Lab1UITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				8D6A4A701CC976DB004F1E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
