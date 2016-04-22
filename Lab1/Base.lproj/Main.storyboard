@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wpm-3S-ZwT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="s3l-82-JPw">
+            <objects>
+                <viewController id="kwD-wJ-vdz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CGv-79-hGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="98C-a0-mnq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4iF-j9-Uie">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="5mB-F3-Wra">
+                                <rect key="frame" x="123" y="144" width="315" height="229"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5mB-F3-Wra" firstAttribute="centerX" secondItem="4iF-j9-Uie" secondAttribute="centerX" id="obT-59-bBe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Keo-2e-2ci"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1q3-c9-uCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608" y="905"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Ako-S8-Kp9">
+            <objects>
+                <viewController id="jok-Ta-SNL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lLJ-1O-7Fc"/>
+                        <viewControllerLayoutGuide type="bottom" id="W3R-E3-szn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MnT-oa-ewt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="family" translatesAutoresizingMaskIntoConstraints="NO" id="8Nt-RQ-xd8">
+                                <rect key="frame" x="142" y="95" width="240" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="8DL-pU-dSF"/>
+                                    <constraint firstAttribute="width" constant="240" id="aFO-8V-hCF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiy-d1-TRk">
+                                <rect key="frame" x="133" y="296" width="288" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Click me to see their profile!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nx7-2I-mng" kind="show" id="WAv-5G-dqu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Nt-RQ-xd8" firstAttribute="centerX" secondItem="MnT-oa-ewt" secondAttribute="centerX" id="7kh-Cd-UHY"/>
+                            <constraint firstItem="kiy-d1-TRk" firstAttribute="centerX" secondItem="MnT-oa-ewt" secondAttribute="centerX" id="DjE-6F-p5W"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="h2a-k7-ArD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6f-lK-GTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="-110"/>
+        </scene>
+        <!--My Table View Controller-->
+        <scene sceneID="Vgl-k3-JeH">
+            <objects>
+                <tableViewController id="Nx7-2I-mng" customClass="MyTableViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="173" sectionHeaderHeight="28" sectionFooterHeight="28" id="LUA-Tj-sqh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tXW-RR-A4w">
+                            <rect key="frame" x="0.0" y="201" width="600" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <segue destination="wpm-3S-ZwT" kind="presentation" id="W2c-qI-0wY"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="173" id="8ln-DR-JW2" customClass="MyTableViewCell" customModule="Lab1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="173"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ln-DR-JW2" id="2mO-1x-NuJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="172.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="NAy-FT-wII">
+                                            <rect key="frame" x="15" y="10" width="124" height="139"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小葵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0I-kf-rgK">
+                                            <rect key="frame" x="180" y="63" width="215" height="21"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="c0I-kf-rgK" id="xMA-xa-Z1v"/>
+                                    <outlet property="pic" destination="NAy-FT-wII" id="d7G-It-Zrf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nx7-2I-mng" id="kUd-7d-gHj"/>
+                            <outlet property="delegate" destination="Nx7-2I-mng" id="j6O-bX-rV5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fa4-wy-lfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="442"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9et-va-1nK">
+            <objects>
+                <tabBarController id="wpm-3S-ZwT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SyH-8P-b2h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jok-Ta-SNL" kind="relationship" relationship="viewControllers" id="nda-Rh-oJi"/>
+                        <segue destination="kwD-wJ-vdz" kind="relationship" relationship="viewControllers" id="Fnd-Ib-IYS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mL2-gC-ARn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="family" width="550" height="413"/>
+        <image name="sun" width="211" height="239"/>
+        <image name="white" width="241" height="209"/>
+    </resources>
+</document>
